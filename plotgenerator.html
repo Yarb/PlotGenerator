@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+<meta charset="UTF-8">
+<script src="src/angular.min.js"></script>
+<script src="src/PlotGenerator.js"></script>
+<link rel="stylesheet" type="text/css" href="src/main.css">
+</head>
+
+
+<div ng-controller='PlotGeneratorController as controller'>
+  <div id="page">
+    <h3>Simple plotline generator app</h3>
+
+    <p id=time></p>
+
+    <form ng-submit="controller.generateCharacter()">
+       <p>Create a character!</p>
+       Name: <input type="text" ng-model="controller.name">
+       <input type="submit" value="Create">
+    </form>
+
+    <p>
+    <button ng-click="controller.generateStory()">Generate story</button>
+    &nbsp;
+    </p>
+    
+    <p>
+    <button ng-click="controller.loadData()">Reload data</button>
+    &nbsp;
+    <button ng-click="controller.clear()">Clean up</button>
+    </p>
+
+    <p>
+    <div ng-bind-template={{controller.getStory()}}></div>
+    <div ng-bind-template={{controller.getData()}}></div>
+    </p>
+</div>
+
+</body>
+</html>

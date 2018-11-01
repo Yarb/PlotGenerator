@@ -1,0 +1,74 @@
+
+{
+"roles" : [
+{ "value": "athlete", "article": "an"}
+,{ "value": "drill sargeant", "article": "a"}
+,{ "value": "bureaucrat", "article": "a"}
+,{ "value": "CEO", "article": "a"}
+,{ "value": "tycoon", "article": "a"}
+,{ "value": "astronaut", "article": "an"}
+,{ "value": "cosmonaut", "article": "a"}
+,{ "value": "magical girl", "article": "a"}
+,{ "value": "teacher", "article": "a"}
+,{ "value": "android", "article": "an"}
+,{ "value": "movie critic", "article": "a"}
+,{ "value": "actor", "article": "an"}
+,{ "value": "dictator", "article": "a"}
+,{ "value": "alien", "article": "an"}
+,{ "value": "playboy", "article": "a"}
+,{ "value": "soldier", "article": "a"}
+,{ "value": "elder", "article": "an"}
+,{ "value": "ganster", "article": "a"}
+,{ "value": "criminal", "article": "a"}
+,{ "value": "police-officer", "article": "a"}
+,{ "value": "agent", "article": "an"}
+,{ "value": "spy", "article": "a"}
+,{ "value": "industrialist", "article": "an"}
+,{ "value": "politician", "article": "a"}
+,{ "value": "hostess", "article": "a"}
+,{ "value": "waitress", "article": "a"}
+,{ "value": "pimp", "article": "a"}
+,{ "value": "student", "article": "a"}
+,{ "value": "high-schooler", "article": "a"}
+,{ "value": "pre-schooler", "article": "a"}
+,{ "value": "evangelist", "article": "an"}
+,{ "value": "preacher", "article": "a"}
+,{ "value": "gunslinger", "article": "a"}
+,{ "value": "(mech-)pilot", "article": "a"}
+,{ "value": "resistance leader", "article": "a"}
+,{ "value": "resistance member", "article": "a"}
+,{ "value": "ruling class proponent", "article": "a"}
+,{ "value": "murderer", "article": "a"}
+,{ "value": "nerd", "article": "a"}
+,{ "value": "gamer", "article": "a"}
+,{ "value": "martial artist", "article": "a"}
+,{ "value": "race driver", "article": "a"}
+,{ "value": "popstar", "article": "a"}
+,{ "value": "idol", "article": "an"}
+,{ "value": "private investigator", "article": "a"}
+,{ "value": "cook", "article": "a"}
+,{ "value": "musician", "article": "a"}
+,{ "value": "serial-killer", "article": "a"}
+,{ "value": "stevardess", "article": "a"}
+,{ "value": "captain", "article": "a"}
+,{ "value": "commander", "article": "a"}
+,{ "value": "president", "article": "a"}
+,{ "value": "prime minister", "article": "a"}
+,{ "value": "coach", "article": "a"}
+,{ "value": "superhero", "article": "a"}
+,{ "value": "super villain", "article": "a"}
+,{ "value": "God", "article": "a"}
+,{ "value": "Goddess", "article": "a"}
+,{ "value": "angel", "article": "an"}
+,{ "value": "catgirl", "article": "a"}
+,{ "value": "werewolf", "article": "a"}
+,{ "value": "vampire", "article": "a"}
+,{ "value": "doctor", "article": "a"}
+,{ "value": "stylist", "article": "a"}
+,{ "value": "esper", "article": "an"}
+,{ "value": "nurse", "article": "a"}
+,{ "value": "nun", "article": "a"}
+,{ "value": "monk", "article": "a"}
+,{ "value": "child soldier", "article": "a"}
+]
+}
