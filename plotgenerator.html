@@ -21,19 +21,19 @@
     </form>
 
     <p>
-    <button ng-click="controller.generateStory()">Generate story</button>
+    <button ng-click="controller.generateStory()">Generate story!!!</button>
     &nbsp;
     </p>
     
     <p>
-    <button ng-click="controller.loadData()">Reload data</button>
+    <button ng-click="controller.loadData()">Reload drive data</button>
     &nbsp;
-    <button ng-click="controller.clear()">Clean up</button>
+    <button ng-click="controller.clear()">Clean up!</button>
     </p>
 
     <p>
-    <div ng-bind-template={{controller.getStory()}}></div>
-    <div ng-bind-template={{controller.getData()}}></div>
+    <div ng-bind-template={{controller.story}}></div>
+    <div ng-bind-template={{controller.data}}></div>
     </p>
 </div>
 

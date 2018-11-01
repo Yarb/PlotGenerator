@@ -10,9 +10,6 @@
         vm.generateCharacter = generateCharacter;
         vm.generateStory = generateStory;
         vm.clear = clear;
-        vm.getStory = getStory;
-        vm.getData = getData;
-        vm.getItem = getItem;
         vm.loadData = loadData;
         vm.dataSets = [];
         
@@ -21,9 +18,9 @@
         vm.story = " ";
         vm.item = " ";
         
+        
         var dataAddress = "src/";
         var dataFiles = ["roles", "entities", "methods", "objectives", "attributes"];
-        
         var loaded = 0;
 
         function generateCharacter() {
@@ -49,19 +46,8 @@
         
         function clear() {
             vm.story = " ";
+            vm.data = " ";
         }
-        
-        function getStory() {
-            return vm.story;
-        }
-        
-        function getData() {
-            return vm.data;
-        }
-
-        function getItem() {
-            return vm.item;
-        }        
         
         function loadData() {
             vm.data = "Load in progress..."
