@@ -21,19 +21,20 @@
         
         var dataAddress = "src/";
         var dataFiles = ["roles", "entities", "methods", "objectives", "attributes"];
-        var loaded = 0;
+        var loaded = -10;
 
         function generateCharacter() {
-            var role = randomize(0);
-            var attribute = randomize(4);
-            vm.data = "Enter our brave main character: " + 
-                attribute + " " + role + " " + vm.name + ".";
+            if (!checkLoaded()) {
+            }else {
+                var role = randomize(0);
+                var attribute = randomize(4);
+                vm.data = "Enter our brave main character: " + 
+                    attribute + " " + role + " " + vm.name + ".";
+            }
         }
         
         function generateStory() {
-            if (!loaded) {
-                loadData();
-                vm.story = " ";
+            if (!checkLoaded()) {
             }else {
                 var who = randomize(1);
                 who = who.charAt(0).toUpperCase() + who.slice(1);
@@ -51,18 +52,22 @@
         
         function loadData() {
             vm.data = "Load in progress..."
-            for (var x = 0; x < dataFiles.length; x++){
-                vm.dataSets.push([]);
-                urlLoader(x, dataFiles[x]);
-            }
             loaded = 1;
-            vm.data = " ";
+            for (var x = 1; x <= dataFiles.length; x++){
+                vm.dataSets.push([]);
+                urlLoader(x, dataFiles[x - 1]);
+                loaded -= x;
+            }
         }
         
         function urlLoader(id, urlSuffix) {
             return $http.get(dataAddress + urlSuffix + ".json")
                 .then(function(response) {   
-                    vm.dataSets[id] = response.data[urlSuffix];
+                    vm.dataSets[id - 1] = response.data[urlSuffix];
+                    loaded += id;
+                    if (loaded === 1){
+                        vm.data = " ";
+                    }
                 }, 
                 function(response) {
                     return "error";
@@ -71,6 +76,14 @@
         
         function randomize(listId) {
             return vm.dataSets[listId][Math.round(Math.random() * (vm.dataSets[listId].length - 1))].value;
+        }
+        
+        function checkLoaded() {
+            if (loaded < -9) {
+                loadData();
+                return 0;
+            }
+            return 1;
         }
     }
 
